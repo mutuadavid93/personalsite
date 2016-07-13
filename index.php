@@ -12,21 +12,21 @@
     <link href="_/css/mystyles.css" rel="stylesheet">
     
   </head>
-  <body id="home">
+  <body id="home" data-spy="scroll" data-target=".scrollspy">
       
       <section class="container">
-          <div class="content row">
-              <article>
-                  <div class="main col-lg-8">
-                      <?php require_once './_/components/php/header.php'; ?>
-                  </div><!-- Main section -->
-                  <div class="main col-lg-4">
-                      
-                  </div><!-- Side Bar code -->
-              </article>
+          <div class="row">
+            <?php require_once './_/components/php/header.php'; ?>
+              <div class="col-lg-8 main">
+                    <?php require_once './_/components/php/artists_list.php'; ?>
+              </div>
+              <div class="col-lg-4 sidebar">
+              </div>
           </div>
-      </section><!-- container -->
-      <?php require_once './_/components/php/footer.php'; ?>
+      </section>
+      
+      
+                      
 
     <script src="_/js/bootstrap.js"></script>
     <script src="_/js/myscript.js"></script>

@@ -19,6 +19,7 @@
               <article>
                   <div class="main col-lg-8">
                       <?php require_once './_/components/php/header.php'; ?>
+                      <?php require_once './_/components/php/artists_list.php'; ?>
                   </div><!-- Main section -->
                   <div class="main col-lg-4">
                       

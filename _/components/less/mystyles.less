@@ -1,10 +1,148 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : Jul 13, 2016, 10:00:21 AM
     Author     : Street
 */
 
+@headlineFontFamily: "Bree Serif", "Helvetica Neue", Helvetica, Arial;
+@copyFontFamily: Merriweather, Georgia, "Times New Roman", Times, Serif;
+
+//my colours
+@red:       #BA83D4;
+@magenta:   #FDF5E3;
+@beige:     #F5F5DC;
+@yellow:    #FDAD22;
+@purple:    #475C98;
+@darkblue:  #586E75;
+@pink:      #D33682;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @headlineFontFamily;
+    color: @purple;
+}
+
+body {
+    margin-top: 30px;
+}
+
+p {
+    font-family: @copyFontFamily;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: @darkblue;
+    padding: 0 2%;
+}
+
+.container {
+    background: @beige;
+    -webkit-border-radius: 60px 0 0 0;
+    -moz-border-radius: 60px 0 0 0;
+    border-radius: 60px 0 0 0;
+    
+    @media(max-width: 767px) {
+        -webkit-border-radius: 20px 0 0 0;
+        -moz-border-radius: 20px 0 0 0;
+        border-radius: 20px 0 0 0;
+    }
+}
+
+.main {
+    background: @beige;
+}
+
+.main>article {
+    margin: 0 5%;
+}
+
+.sidebar>aside{
+    padding-right: 5%;
+    
+    @media(max-width: 767px){
+        padding-left: 5%;
+    }
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-left: none;
+    border-radius: 0;
+}
+
+/*#branading {
+    img{
+        margin: 10px 0 5px 25px;
+        max-width: 450px;
+        @media(max-width: 767px) {
+            margin: 10px 0 5px 10px;
+            width: 90%;
+        }
+    }
+}*/
+
+.accordion-heading {
+    background: @purple;
+    a {
+        color: #FFF;
+    }
+}
+
+h3 {
+    color: @pink;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.artist {
+    margin-right: 10px;
+}
+
+
+.scrollspy .nav {
+    background: @purple;
+    margin-top: 20px;
+    -webkit-border-radius: 10px 0 0 0;
+    -moz-border-radius: 10px 0 0 0;
+    border-radius: 10px 0 0 0;
+    
+    @media(max-width: 979px){
+        width: 15%;
+        max-width: 120px;
+    }
+    
+    @media(max-width: 1199px) {
+        width: 13%;
+    }
+    
+    @media(max-width: 1200px) {
+        width: 13%;
+        max-width: 180px;
+    }
+    
+    
+    li{
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid darken(@purple, 10%);
+        border-top: 1px solid lighten(@purple, 10%);
+        
+        a{
+            color: #FFF;
+            text-indent: -20px;
+            padding-left: 30px;
+        }
+        a:hover{
+            background: @yellow;
+            color: #000;
+        }
+    }
+    
+    li.active {
+        background: @pink;
+    }
+    li:first-child{
+        border-top: none;
+    }
+    li:last-child{
+        border-bottom: none;
+    }
+}
