@@ -12,13 +12,13 @@
     <link href="_/css/mystyles.css" rel="stylesheet">
     
   </head>
-  <body id="home">
+  <body id="about">
       
       <section class="container">
           <div class="content row">
               <article>
                   <div class="main col-lg-8">
-                      
+                      <?php require_once './_/components/php/header.php'; ?>
                   </div><!-- Main section -->
                   <div class="main col-lg-4">
                       

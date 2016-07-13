@@ -18,7 +18,7 @@
           <div class="content row">
               <article>
                   <div class="main col-lg-8">
-                      
+                      <?php require_once './_/components/php/header.php'; ?>
                   </div><!-- Main section -->
                   <div class="main col-lg-4">
                       
