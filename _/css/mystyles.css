@@ -97,7 +97,7 @@ h3 {
   }
 }
 .scrollspy .nav li {
-  padding: 0;
+  padding: 20;
   margin: 0;
   border-bottom: 1px solid #374775;
   border-top: 1px solid #5e74b4;
