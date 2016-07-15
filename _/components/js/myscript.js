@@ -16,5 +16,8 @@ $(document).ready(function () {
        $('.dropdown-menu', this).fadeIn('slow');
    }, function (){
        $('.dropdown-menu', this).fadeOut('fast');
-   });
+   });   
 });
+
+ $('.carousel h2').addClass("wow slideInLeft").attr('data-wow-duration', '2s');
+ $('.carousel-caption p').addClass("wow slideInRight").attr('data-wow-duration', '2s');
