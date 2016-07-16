@@ -18,6 +18,18 @@
 @herokuiconhover: #00ADF3;
 @herokurollbar: #365A7B;
 
+
+#Portfolio {
+    min-height: 500px;
+}
+
+.img-rounded {margin-left: 20%;}
+
+.carousel{
+    h2{color: white;} p{color: white;}
+    margin-top: 30px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: @headlineFontFamily;
     color: @purple;
@@ -25,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    margin-top: 30px;
+    margin-top: 0;
 }
 
 
@@ -107,35 +119,18 @@ h3 {
 
 .scrollspy .nav {
     background: @purple;
-    margin-top: 20px;
     -webkit-border-radius: 10px 0 0 0;
     -moz-border-radius: 10px 0 0 0;
     border-radius: 10px 0 0 0;
     
-    @media(max-width: 979px){
-        width: 15%;
-        max-width: 120px;
-    }
-    
-    @media(max-width: 1199px) {
-        width: 13%;
-    }
-    
-    @media(max-width: 1200px) {
-        width: 13%;
-        max-width: 180px;
-    }
-    
-    
     li{
-        padding: 20;
+        padding: 5;
         margin: 0;
         border-bottom: 1px solid darken(@purple, 10%);
         border-top: 1px solid lighten(@purple, 10%);
         
         a{
             color: @magenta;
-            text-indent: -20px;
             padding-left: 30px;
         }
         a:hover{
@@ -156,9 +151,9 @@ h3 {
 }
 
 .line {
-    height: 2px;
+    height: 10px;
     width: 100%;
-    margin: 40px 0;
+    margin: 50px 0;
 }
 
 .figure { text-align: center; }
@@ -197,6 +192,10 @@ header { .figure; }
     padding-top: 10px;
     color: #b2b2b2;
 }
+
+address {
+    font-family: @copyFontFamily;
+}
 .footer-nav{
     list-style: none;
     text-align: right;
@@ -216,4 +215,13 @@ header { .figure; }
 
 .footer-nav a:hover{
     color: @purple;
+}
+
+blockquote footer {
+    font-style: italic;
+    font-family: @copyFontFamily;
+}
+
+.progress span {
+    text-align: left;
 }
