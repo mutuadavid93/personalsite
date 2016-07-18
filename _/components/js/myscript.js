@@ -19,11 +19,11 @@ $(document).ready(function () {
    });
    
        //for only nav links use this
-       /* $('.nav li a') */
+       /* $('.nav li a') or a[href*=#]'*/
        
-    $('a[href*=#]').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-      && location.hostname == this.hostname) {
+    $('.nav li a', '#myname').click(function() {
+      if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'')
+      && location.hostname === this.hostname) {
         var $target = $(this.hash);
         $target = $target.length && $target
         || $('[name=' + this.hash.slice(1) +']');

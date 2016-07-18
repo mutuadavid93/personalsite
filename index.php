@@ -179,11 +179,11 @@
           </section>
       </div><!-- container -->
       
-      <section class="row">
+      <section class="row" id="SKills">
         <div class="line"></div>
      </section>
       
-      <section class="container" id="SKills">
+      <section class="container">
           <div class="row">
               <div class="deets">
                   <header>
@@ -251,11 +251,11 @@
                 </div>
       </section>
       
-      <section class="row">
+      <section class="row" id="Testimonials">
         <div class="line"></div>
      </section>
       
-      <section class="container" id="Testimonials">
+      <section class="container">
           <div class="row">
               <div class="col-lg-12">
                 <div class="deets">
