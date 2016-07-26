@@ -55,12 +55,12 @@
       
       
       <!-- carousel Nairobi only -->
-      <section class="container" id="Home">
+      <section class="containeed" id="Home">
         <div id="carousel-example-generic" class="carousel slide hidden-sm hidden-xs" data-ride="carousel">
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
-            <div class="item active">
+            <div class="item">
               <img src="images/carosuel_mosque.jpg" alt="Nairobi City Mosque">
               <div class="carousel-caption">
                 <h2>Nairobi City Mosque</h2>
