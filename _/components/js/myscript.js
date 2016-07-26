@@ -2,8 +2,12 @@
  * This File Prosesses to Final Script which is mangled.
  */
 
-var topoffset = 43;
+var topoffset = 30;
 $(document).ready(function () {  
+    /*
+     * 
+     * @type $Carousel Fullscreen
+     */
     var $item = $('.carousel .item'); 
     var $wHeight = $(window).height();
     $item.eq(0).addClass('active');
@@ -35,10 +39,28 @@ $(document).ready(function () {
        $('.dropdown-menu', this).fadeOut('fast');
    });
    
+    $(window).scroll(function () {
+     var windowposn = $(window).scrollTop() +  topoffset;
+     $('nav li a').removeClass('active');
+     
+     if(windowposn > $('#Home').offset().top) {
+         $('nav li a').removeClass('active');
+         $('a[href$="#Home"]').addClass('active');
+     }//windowposn
+     if(windowposn > $('#About').offset().top) {
+         $('nav li a').removeClass('active');
+         $('a[href$="#About"]').addClass('active');
+     }//windowposn
+     if(windowposn > $('#Skills').offset().top) {
+         $('nav li a').removeClass('active');
+         $('a[href$="#Skills"]').addClass('active');
+     }//windowposn
+    });
+   
        //for only nav links use this
        /* $('.nav li a') or a[href*=#]'*/
        
-    $('.nav li a').click(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'')
       && location.hostname === this.hostname) {
         var $target = $(this.hash);

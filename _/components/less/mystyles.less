@@ -19,11 +19,7 @@
 @herokuiconhover: #00ADF3;
 @herokurollbar: #365A7B;
 @defaultbg: #FFFFFF;
-
-
-#Portfolio {
-    min-height: 500px;
-}
+@activenav: #FF8598;
 
 .img-rounded {margin-left: 20%;}
 
@@ -37,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
     color: @purple;
     font-weight: 3.8em;
 }
+
 
 body {
     margin-top: 0;
@@ -112,6 +109,10 @@ h3 {
     padding: 0;
     margin : 0 30px 20px 30px;
     font-size: 1.5em;
+}
+
+.nav .li.active {
+    background: @activenav;
 }
 
 .artist {
@@ -232,4 +233,12 @@ blockquote footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#arrow {
+    position: absolute;
+    top: 60%;
+    left: 47%;
+    text-align: center;
+    z-index: 100;
 }
