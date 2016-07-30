@@ -8,7 +8,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Personal--Home</title>
     <!-- Bootstrap -->
-    <link href="_/components/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="_/css/final.css" rel="stylesheet">
     
     <script type="text/javascript" src="_/js/wow.min.js"></script>
@@ -140,7 +139,7 @@
                   <article>
                       <div class="col-md-4 deets">
                           <figure>
-                              <img class="img-circle img-responsive" src="images/respo_design.jpg" />
+                              <img class="img-circle img-responsive" src="images/respo_design.jpg" width="225" height="225" />
                            </figure>
                       </div>
                       <div class="col-md-6 col-md-offset-1">
@@ -164,7 +163,7 @@
                   <article>
                       <div class="col-md-4 col-md-push-8">
                           <figure>
-                                <img class="img-circle img-responsive" src="images/app_dev.jpg" />
+                              <img class="img-circle img-responsive" src="images/app_dev.jpg" width="225" height="225" />
                             </figure>
                       </div>
                       <div class="col-md-6 col-md-pull-4">
@@ -281,7 +280,7 @@
                                 {{ #speakers }}
                                     <div class="speakers">
                                         <h3>{{name}}</h3>
-                                        <img class="img-circle" src='images/{{shortname}}_tn.jpg' alt='Photo of {{name}}' />
+                                        <img class="img-circle" height='{{height}}' width='{{width}}' src='images/{{shortname}}_tn.jpg' alt='Photo of {{name}}' />
                                         <h4>{{reknown}}</h4>
                                         <blockquote>
                                             <p>" {{bio}} "</p>
@@ -360,7 +359,7 @@
             <div class="container">
                 <section class="row">
                     <address>
-                        Milamani Rd, Nass.Drive, Nass Aprtmnts.
+                        Milimani Rd, Nass.Dr, Nass Aprtmnts.
                         <p>
                             <a href="#myname">
                                 <img src="images/up-arrow.png" class="pull-right" width="34" height="34" alt="up arrow">
