@@ -1,0 +1,24 @@
+{
+    "speakers" : [
+        {
+            "name" : "William Muli",
+            "shortname" : "William",
+            "reknown" : "Senior Developer T.I",
+            "bio" : "Troubleshooting and debugging are inevitable in any system building cycle, you gat that covered."
+        },
+        {
+            "name" : "Etyan Kizito",
+            "shortname" : "Kayzii",
+            "reknown" : "Web designer",
+            "bio" : "Successful projects, rely on time-frame.He stays on speed for timely completion of deliverables."
+        },
+        {
+            "name" : "Denis Ngahu",
+            "shortname" : "Denis",
+            "reknown" : "SharePoint Evangilist",
+            "bio" : "David is a complete developer who posseses a collaborative aspect and teamwork spirit in general."
+        }
+    ]
+}
+
+

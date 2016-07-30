@@ -4,6 +4,7 @@
 
 var topoffset = 30;
 $(document).ready(function () {  
+    var isTouch = 'ontouchstart' in document.documentElement;
     /*
      * 
      * @type $Carousel Fullscreen
@@ -80,6 +81,26 @@ $(document).ready(function () {
       }
     });
    
+   /*
+    * Mustache Testimonials section
+    */
+   $.getJSON('data.json', function (data) {
+        var template = $('#speakerstpl').html();
+
+        //call mustache.to_html(), 
+        //to process the data and create the template and feed it to html
+        var html = Mustache.to_html(template, data);
+        $('#carousel').html(html);
+
+        if(!isTouch) {
+            //the cycle carousel
+            $('#carousel').cycle({
+                fx: 'fade',
+                pause: 1,
+                timeout: 2500
+            });
+        }
+    });//get json
 });
 
  $('.carousel h2').addClass("wow slideInLeft").attr('data-wow-duration', '1.6s');

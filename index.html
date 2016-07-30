@@ -9,9 +9,7 @@
     <title>Personal--Home</title>
     <!-- Bootstrap -->
     <link href="_/components/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-    <link href="_/css/animate.min.css" rel="stylesheet">
-    <link href="_/css/bootstrap.css" rel="stylesheet">
-    <link href="_/css/mystyles.css" rel="stylesheet">
+    <link href="_/css/final.css" rel="stylesheet">
     
     <script type="text/javascript" src="_/js/wow.min.js"></script>
     <script type="text/javascript">
@@ -19,7 +17,7 @@
     </script>
     
   </head>
-  <body data-spy="scroll" data-target=".scrollspy">
+  <body>
       
       <!-- Navigation -->
       <section class="container" id="myname">
@@ -91,7 +89,7 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div><!-- End carousel -->
-        <p id="arrow">
+        <p class="arrow">
             <a href="#Greetings">
                 <img src="images/arrow.png" width="34" height="34" alt="down arrow"
                      class="hidden-sm hidden-xs wow slideInUp animated" data-wow-duration="2s" data-wow-delay="2s">
@@ -276,37 +274,33 @@
                     </header>
                 </div>
                 <section class="row">
-                      <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay=".6s">
-                          <img class="img-rounded img-responsive" src="images/Denis.PNG" />
-                          <blockquote>
-                              <p>He knows how to work in a team as well as being a Communication skills elite model.</p>
-                              <footer>Denis Ngahu</footer>
-                          </blockquote>
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-xs-12 wow pulse" data-wow-duration="1.5s" data-wow-delay="1.4s">
-                          <img class="img-rounded img-responsive" src="images/william.jpg" />
-                          <blockquote>
-                              <p>You are looking for someone to finish your projects in time, definately David is that person.</p>
-                              <footer>William Wambua</footer>
-                          </blockquote>
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInRight animated" data-wow-duration="1s" data-wow-delay=".6s">
-                          <img class="img-rounded img-responsive" src="images/kay.jpg" />
-                          <blockquote>
-                              <p>Successful projects, rely on tough organization skills. Mutua does just that.</p>
-                              <footer>Etyan Kizito</footer>
-                          </blockquote>
-                      </div>
+                    <div class="col-md-10 col-md-offset-1 debriefing">
+                        <div id="carousel">
+                            <!-- Mustachejs Template -->
+                            <script id="speakerstpl" type="text/template">
+                                {{ #speakers }}
+                                    <div class="speakers">
+                                        <h3>{{name}}</h3>
+                                        <img class="img-circle" src='images/{{shortname}}_tn.jpg' alt='Photo of {{name}}' />
+                                        <h4>{{reknown}}</h4>
+                                        <blockquote>
+                                            <p>" {{bio}} "</p>
+                                        <blockquote>
+                                    </div>
+                                {{ /speakers }}
+                            </script>
+                        </div>
+                    </div>
                 </section><!-- Testimonials -->
               </div>
           </div>
       </section>
       
-      <section class="row" id="Portfolio">
+      <section class="row">
         <div class="line"></div>
      </section>
       
-      <section class="container">
+      <section class="container" id="Portfolio">
           <div class="row">
               <div class="col-lg-12">
                   <div class="deets">
@@ -366,8 +360,12 @@
             <div class="container">
                 <section class="row">
                     <address>
-                        Milamani Rd, Nr.Drive, Nr Aprtmnts.
-                        <a href="#myname"><i class="fa fa-chevron-circle-up fa-2x text-primary pull-right"></i></a>
+                        Milamani Rd, Nass.Drive, Nass Aprtmnts.
+                        <p>
+                            <a href="#myname">
+                                <img src="images/up-arrow.png" class="pull-right" width="34" height="34" alt="up arrow">
+                            </a>
+                        </p>
                     </address>
                 </section>
                 <section class="bottom-footer">
@@ -384,7 +382,6 @@
             </div>
         </footer>
 
-    <script src="_/js/bootstrap.js"></script>
-    <script src="_/js/myscript.js"></script>
+    <script src="_/js/script.js"></script>
   </body>
 </html>
