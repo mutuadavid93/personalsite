@@ -26,7 +26,7 @@ ExpiresByType application/json "access plus 1 month"
 ExpiresByType text/x-javascript "access plus 1 month"
 ExpiresByType text/javascript "access plus 7 days"
 ExpiresByType image/x-icon "access plus 1 month"
-ExpiresDefault "access plus 2 days"
+ExpiresDefault "access plus 14 days"
 </IfModule>
 
 
