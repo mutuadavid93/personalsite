@@ -1,0 +1,126 @@
+{
+  "basics": {
+    "name": "David Kyule Mutua",
+    "picture": "https://mega.nz/#!hsIiBTSY",
+    "nationality": "KENYAN",
+    "email": "mutuadavi@gmail.com",
+    "language": "English and Swahili",
+    "phone": "(+254 714 265541)",
+    "nationalID": "30094614",
+    "website": "https://davidsite.herokuapp.com",
+    "location": {
+      "address": "Milimani Rd, Nass Dr, Nass Apartments",
+      "postalCode": "00100",
+      "city": "Nairobi, Kenya",
+      "countryCode": "KE",
+      "region": "Nairobi"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "mutuadavid93",
+        "url": "https://twitter.com/istreetec"
+      },
+      {
+        "network": "Facebook",
+        "username": "mutua.david.5",
+        "url": "https://www.facebook.com/mutua.david.5"
+      },
+      {
+        "network": "Youtube",
+        "username": "mutua.david",
+        "url": "https://www.youtube.com/channel/UCPdOBfRMJB8o7GRVB0UWilQ"
+      },
+      {
+        "network": "Github",
+        "username": "mutuadavid93",
+        "url": "https://github.com/mutuadavid93"
+      }
+    ],
+    "work": [
+      {
+        "institution": "Alternate Ltd.",
+        "position": "SharePoint Developer",
+        "website": "http://altn8.co.ke",
+        "startDate": "June 2015",
+        "endDate": "Present",
+        "discussion": [
+          {
+            "pointOne": "Branded Intranets and Application development in C-Sharp (C#), REST API as well as leveraging with Bootstrap.js and jQuery.",
+            "pointTwo": "Presented projects at clients' premises increasing clients count to 80%. Analysed complex data statistically to identify insights and conclusions."
+          }
+        ]
+      },
+      {
+        "institution": "Masinde Muliro University, Kakamega, KENYA",
+        "position": "Graduate",
+        "website": "http://mmust.ac.ke",
+        "startDate": "August, 2012",
+        "endDate": "April, 2016",
+        "discussion": [
+          {
+            "pointOne": "Acquired a 2nd upper, Bsc. In Information Technology. 3rd and 4th year programed projects in Java, PHP, Bootstrap and JavaScript. Brought mates to speed with their projects' completion.",
+            "pointTwo": "Participated in an Indutrial training in End 2nd year on computer repair, maintenance, troubleshooting, database adminstration,  linux and basic networking tasks."
+          }
+        ]
+      },
+      {
+        "institution": "Wango A.I.C Secondary School, Embu, KENYA",
+        "position": "K.C.S.E",
+        "website": "http://wango.ac.ke",
+        "startDate": "February, 2008",
+        "endDate": "April, 2012",
+        "discussion": [
+          {
+            "pointOne": "B+ (plus) meangrade, attended and contributed into co-curiculum competitions; Science and Mathematics contests in Nyangwa High School.",
+            "pointTwo": "Scored an A in Physics and adored science oriented practicals. Represented my team in Bandminton game exolting my school from psoition 5 to position 2 regionalwise."
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "technology": "Version / Change control",
+        "language": "Git",
+        "level": "master"
+      },
+      {
+        "technology": ".NET Development",
+        "language": "C#, ASP.NET, .NET MVC5, .NET Framework",
+        "level": "average"
+      },
+      {
+        "technology": "Front end development",
+        "language": "Bootstrap, jQuery UI, HTML / CSS3",
+        "level": "enthusiast"
+      },
+      {
+        "technology": "Database",
+        "language": "MSQL, MySQL",
+        "level": "average"
+      }
+    ],
+    "referees": [
+      {
+        "refererName": "David Murathi",
+        "refererNo": "(+254720 817318)",
+        "reference": "He is a communications-skilled elite model both in written and spoken means of expression."
+      },
+      {
+        "refererName": "William Muli",
+        "refererNo": "(+254 700 203130)",
+        "reference": "He is a communications-skilled elite model both in written and spoken means of expression."
+      },
+      {
+        "refererName": "Denis Ngahu",
+        "refererNo": "(+254700 774004)",
+        "reference": "He is a communications-skilled elite model both in written and spoken means of expression."
+      },
+      {
+        "refererName": "Etyan Kizito",
+        "refererNo": "(+254 711 156456)",
+        "reference": "He is a communications-skilled elite model both in written and spoken means of expression."
+      }
+    ]
+  }
+}

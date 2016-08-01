@@ -84,7 +84,7 @@ $(document).ready(function () {
    /*
     * Mustache Testimonials section
     */
-   $.getJSON('data.json', function (data) {
+   $.getJSON('_/json/data.json', function (data) {
         var template = $('#speakerstpl').html();
 
         //call mustache.to_html(), 

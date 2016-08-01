@@ -4,4 +4,4 @@ node_modules
 /nbproject/private/
 gulpfile.js
 package.json
-./**/min/*
+min/*
