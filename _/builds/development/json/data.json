@@ -1,0 +1,30 @@
+{
+    "speakers" : [
+        {
+            "name" : "William Muli",
+            "shortname" : "William",
+            "width" : "164",
+            "height" : "164",
+            "reknown" : "Senior Developer T.I",
+            "bio" : "Troubleshooting and debugging are inevitable in any system building cycle, you gat that covered."
+        },
+        {
+            "name" : "Etyan Kizito",
+            "shortname" : "Kayzii",
+            "width" : "164",
+            "height" : "164",
+            "reknown" : "Web designer / Networking",
+            "bio" : "Successful projects, rely on time-frame.He stays on speed for timely completion of deliverables."
+        },
+        {
+            "name" : "Denis Ngahu",
+            "shortname" : "Denis",
+            "width" : "164",
+            "height" : "164",
+            "reknown" : "SharePoint Consultant",
+            "bio" : "David is a complete developer who posseses a collaborative aspect and teamwork spirit in general."
+        }
+    ]
+}
+
+

@@ -4,8 +4,8 @@
 */
 
 
-@headlineFontFamily: "Bree Serif", "Helvetica Neue", Helvetica, Arial;
-@copyFontFamily: Merriweather, Georgia, "Times New Roman", Times, Serif;
+@headlineFontFamily: "Oxygen", "Helvetica Neue", Helvetica, Arial;
+@copyFontFamily: "Open Sans", Georgia, "Times New Roman", Times, Serif;
 
 //my colours
 @red:       #BA83D4;
@@ -31,7 +31,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: @headlineFontFamily;
     color: @purple;
-    font-weight: 3.8em;
+    font-weight: bold;
 }
 
 
@@ -241,4 +241,17 @@ blockquote footer {
     left: 47%;
     text-align: center;
     z-index: 100;
+}
+
+.easy-pie-chart,
+.easyPieChart {
+  position:relative;
+  text-align:center;
+}
+
+.easy-pie-chart canvas,
+.easyPieChart canvas {
+  position:absolute;
+  top:0;
+  left:0;
 }

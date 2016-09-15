@@ -1,10 +1,24 @@
 /*
  * This File Prosesses to Final Script which is mangled.
  */
-
+new WOW().init();
 var topoffset = 30;
 $(document).ready(function () {  
     var isTouch = 'ontouchstart' in document.documentElement;
+    
+    //all the pie-charts under Rating
+        $('.easy-pie-chart.percentage').each(function(){
+                $(this).easyPieChart({
+                        barColor: $(this).data('color'),
+                        trackColor: '#EAEAB4',
+                        scaleColor: false,
+                        lineCap: 'square',
+                        lineWidth: 14,
+                        animate: 1000,
+                        size:132
+                }).css('color', $(this).data('color'));
+        });
+    
     /*
      * 
      * @type $Carousel Fullscreen
@@ -84,7 +98,7 @@ $(document).ready(function () {
    /*
     * Mustache Testimonials section
     */
-   $.getJSON('_/json/data.json', function (data) {
+   $.getJSON('json/data.json', function (data) {
         var template = $('#speakerstpl').html();
 
         //call mustache.to_html(), 
