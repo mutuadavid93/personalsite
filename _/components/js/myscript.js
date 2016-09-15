@@ -75,7 +75,7 @@ $(document).ready(function () {
          return false;
         }
       }
-    });
+    });    
    
    /*
     * Mustache Testimonials section

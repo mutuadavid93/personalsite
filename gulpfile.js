@@ -81,7 +81,7 @@ gulp.task('less', function  () {
 
 gulp.task('watch', function () {
     gulp.watch([jsSource3], ['bootstrapJS']);
-    gulp.watch([lessSources], ['less']);
+    gulp.watch(['_/components/less/**/*.less'], ['less']);
     gulp.watch(['index.html'], ['html']);
     gulp.watch(['images/**/*.*'], ['moveImages']);
 });

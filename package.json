@@ -7,7 +7,11 @@
     "type": "git",
     "url": "https://github.com/mutuadavid93/BootstrapTweak.git"
   },
-  "author": "David Mutua",
+  "author": {
+      "name" : "David Mutua",
+      "email" : "mutuadavi@gmail.com",
+      "url" : "https://davidsite.herokuapp.com"
+  },
   "devDependencies": {
     "event-stream": "^3.3.4",
     "gulp": "^3.9.1",
