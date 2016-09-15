@@ -15,10 +15,12 @@
     "gulp-connect": "^5.0.0",
     "gulp-htmlmin": "^2.0.0",
     "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.3",
     "gulp-jsonminify": "^1.0.0",
     "gulp-less": "^3.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.0.0",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.7",
+    "imagemin-pngcrush": "^5.0.0"
   }
 }

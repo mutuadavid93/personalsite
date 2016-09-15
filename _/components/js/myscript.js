@@ -54,24 +54,6 @@ $(document).ready(function () {
        $('.dropdown-menu', this).fadeOut('fast');
    });
    
-    $(window).scroll(function () {
-     var windowposn = $(window).scrollTop() +  topoffset;
-     $('nav li a').removeClass('active');
-     
-     if(windowposn > $('#Home').offset().top) {
-         $('nav li a').removeClass('active');
-         $('a[href$="#Home"]').addClass('active');
-     }//windowposn
-     if(windowposn > $('#About').offset().top) {
-         $('nav li a').removeClass('active');
-         $('a[href$="#About"]').addClass('active');
-     }//windowposn
-     if(windowposn > $('#Skills').offset().top) {
-         $('nav li a').removeClass('active');
-         $('a[href$="#Skills"]').addClass('active');
-     }//windowposn
-    });
-   
        //for only nav links use this
        /* $('.nav li a') or a[href*=#]'*/
        

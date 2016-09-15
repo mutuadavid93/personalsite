@@ -7,12 +7,14 @@ var gulp = require('gulp'),
     gulpif = require('gulp-if'),
     htmlMin = require('gulp-htmlmin'),
     rename = require('gulp-rename'),
+    imageMin = require('gulp-imagemin'),
+    pngCrush = require('imagemin-pngcrush'),
     jsonMin = require('gulp-jsonminify'),
     gutil = require('gulp-util');
     
 var env,jsSource1, jsSource2, jsSource3, lessSources, outputDir; 
     
-env = 'development';  
+env = process.env.NODE_ENV || 'production';  
     
 if(env === 'development') {
     outputDir = '_/builds/development/';
@@ -81,6 +83,7 @@ gulp.task('watch', function () {
     gulp.watch([jsSource3], ['bootstrapJS']);
     gulp.watch([lessSources], ['less']);
     gulp.watch(['index.html'], ['html']);
+    gulp.watch(['images/**/*.*'], ['moveImages']);
 });
 
 gulp.task('connect', function () {
@@ -110,7 +113,13 @@ gulp.task('json', function () {
 
 gulp.task('moveImages', function () {
     gulp.src('images/**/*.*')
-            .pipe(gulp.dest(outputDir + 'images'));
+            .pipe(gulpif(env === 'production', imageMin({
+                use: [ pngCrush() ],
+                progressive: true,
+                svgoPlugins: [{ removeViewBox:false }]
+            })))
+            .pipe(gulp.dest(outputDir + 'images'))
+            .pipe(connect.reload());
 });
 
 gulp.task('default', ['html', 'bootstrapJS', 'less', 'moveImages', 'json', 'connect', 'watch']);
